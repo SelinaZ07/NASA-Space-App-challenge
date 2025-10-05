@@ -15,3 +15,7 @@ There are **6 pages** on the website:
 - *resources.html*: On this page, we provided some additional websites that the users may find helpful.
 
 **Backend**: 
+
+- *paper.js*: All the fill in information for the Publication page
+- *script.js*: Display the filters and search functionality in the Publication page
+- *mindmap.js*: Display the animations and interactions for the mindmap on the Future Direction page.
