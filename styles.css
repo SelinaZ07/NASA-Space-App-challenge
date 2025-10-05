@@ -1,0 +1,533 @@
+/* Header styles  */
+#header {
+  background-color: #0b3d91;   
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Header links (tab names) */
+#header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#header a:hover {
+  color: #d9e6ff;
+  text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+p{
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+}
+h3{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+a {
+  margin-right: 15px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.content {
+    margin: 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section */
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background Video on homepage */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* 50% darkness */
+}
+
+/*Header text on homepage*/
+.Big-header {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Big-header h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+#searchBar {
+  display: block;
+  width: 95%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filters {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.filters select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#results .card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+/*the outside look of research paper boxes*/
+.card {
+  display: block;/* make the whole card clickable */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  background: 0.2s;
+  text-align: left;
+  border: 2px solid transparent;
+  border-color: gray;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #f0f4ff; /* light highlight on hover */
+  border-color: #3b82f6; /* accent border */
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+/* The big popup for research paper (inner view)*/
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Category tag styles */
+.category-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 8px;
+}
+/* Designs for the filling in publication popup */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;    /* fits nicely on most laptops */
+  max-height: 80vh;
+  width: 90%;
+  overflow-y: auto;    /* enable vertical scrolling */
+  white-space: pre-wrap; 
+}
+
+/*  MINDMAP CONTAINER  */
+#cy {
+  width: 90%;
+  height: 80vh; 
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-image: url("https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_1300/public/2024-12/stsci-01h1cv2fh3kw1w8a4zvq6mdhht.png"); /* replace with your image URL */
+background-size: cover;       
+background-position: center; 
+}
+
+/* POPUP MODAL*/
+#popup.hidden {
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 60%;
+  max-width: 600px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+#close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+#popup h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+/* Simple fade-in animation for the popup */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* highlighting articles  */
+.research-section {
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.research-section h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Grid container */
+.research-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 30px;
+}
+
+/* Highlight research card display*/
+.research-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px; /* fixed width for uniform layout */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Image on highlighting articles*/
+.research-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content on card display*/
+.research-content {
+  padding: 20px;
+}
+
+.research-content h3 {
+  font-size: 1.25em;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.research-content .author {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* button */
+.read-btn {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.read-btn:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  .research-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .research-card {
+    width: 100%;
+  }
+}
+.anchor-text{
+    text-decoration: none;
+    transition-duration: 200ms;
+    font-size: 18px;
+}
+
+.anchor-text:hover {
+    color: blue;
+}
+
+.top-half {
+    width: 100%;      
+    height: 400px;     
+    object-fit: cover; 
+    object-position: top; 
+}
+/* Chatbot floating button */
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Circle button */
+#chatbot-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0b3d91;
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#chatbot-btn:hover {
+  background-color: #082b6b;
+}
+
+/* Chat window (hidden by default) */
+#chatbot-box {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Chat header */
+#chatbot-header {
+  background-color: #0b3d91;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#chatbot-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* The embedded chatbot */
+#chatbot-frame {
+  flex: 1;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+/* Footer styles*/
+.footer {
+  background-color: #0b3d91;  /* NASA blue */
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left side: logo + title */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Right side: links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+/* Background behind the visualization page */
+.background {
+  background-image: url('https://www.nhm.ac.uk/content/dam/nhm-www/discover/what-is-space/what-is-space-milky-way-full-width.jpg'); /* replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* adds a subtle parallax effect */
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+.visuals{
+  border-radius: 10px;
+}
+

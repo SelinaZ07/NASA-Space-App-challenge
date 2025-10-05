@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nasa Biology hub</title>
+</head>
+<body>
+       <div id="header">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="visuals.html">Visualizations</a>
+      <a href="future.html">Future research</a>
+      <a href="resources.html">Resources</a>
+    </div>
+
+    <section class="home">
+    
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="video-background">
+      <source src="https://www.nasa.gov/wp-content/uploads/2024/06/osdr-intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+    
+    <div class="Big-header">
+      <h1>Space Biology Knowledge Engine</h1>
+    </div>
+    </section>
+<!--The About section-->
+    <div class="content">
+    <h2>About Our Project</h2>
+    <p> Welcome to the NASA Biology Hub!
+        NASA has been performing biology experiments in space for decades, 
+        generating a tremendous amount of information that will need to be considered 
+        as humans prepare to revisit the Moon and explore Mars. 
+        Although this knowledge is publicly available, it can be difficult for potential 
+        users to find information that pertains to their specific interests. Therefore,
+        this is summarizes all the 608 research papers on Space Biology publications from Nasa, into
+        10 categories using machine learning models. We also leveraged Artificial Intelligence to organize all the research's finding,
+        purpose and result for better understanding. Additionally, we built an AI assistant
+        that can help you with specific questions you have regarding Nasa's space biology research.
+        We also used the existing date to build visualizations that help user identify trends, patterns, knowledge gaps,
+        and emerging areas of interest in space biology research.
+    
+    </p>
+
+  <!--Highlighting articles section-->
+    <h2>Highlighting articles</h2>
+    </div>
+
+<section class="research-section">
+    <div class="research-grid">
+
+    <!--Research paper 1 -->
+    <div class="research-card">
+      <img src="https://public.ksc.nasa.gov/nslsl/wp-content/uploads/sites/30/2023/08/new1.png" alt="Meta-analysis of the space flight and microgravity response…">
+      <div class="research-content">
+        <h3>Meta-analysis of the space flight and microgravity response…</h3>
+        <p class="author">Richard Barker</p>
+        <a href="https://www.nature.com/articles/s41526-023-00247-6" class="read-btn" target="_blank">Read Full Paper</a>
+      </div>
+    </div>
+
+    <!-- Research Paper 2 -->
+    <div class="research-card">
+      <img src="https://public.ksc.nasa.gov/nslsl/wp-content/uploads/sites/30/2023/08/new3.png" alt="Comprehensive analyses of plant hormones in etiolated pea and…">
+      <div class="research-content">
+        <h3>Comprehensive analyses of plant hormones in etiolated pea and…</h3>
+        <p class="author">Chiaki Yamazaki</p>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S2214552422000797?via%3Dihub" class="read-btn" target="_blank">Read Full Paper</a>
+      </div>
+    </div>
+
+    <!-- Research Paper 3 -->
+    <div class="research-card">
+      <img src="https://public.ksc.nasa.gov/nslsl/wp-content/uploads/sites/30/2023/08/new2.png" alt="Microbiological and Nutritional Analysis of Lettuce Crops…">
+      <div class="research-content">
+        <h3>Microbiological and Nutritional Analysis of Lettuce Crops…</h3>
+        <p class="author">Christina L. M. Khodadad</p>
+        <a href="https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2020.00199/full" class="read-btn" target="_blank">Read Full Paper</a>
+      </div>
+    </div>
+</section>
+  </div>
+  <!-- Chatbot floating button -->
+<div id="chatbot-container">
+  <button id="chatbot-btn">💬</button>
+  
+  <div id="chatbot-box">
+    <div id="chatbot-header">
+      <span>AI Assistant</span>
+      <button id="chatbot-close">&times;</button>
+    </div>
+
+    <!-- Pop up frame of the chatbot -->
+    <iframe 
+      id="chatbot-frame" 
+      src="https://bot.writesonic.com/share/bot/15397ffd-6514-494f-abb1-8b1c0346c8fb" 
+      title="Chatbot"
+      allow="microphone; camera"
+    ></iframe>
+  </div>
+</div>
+<!-- Footer / Bottom bar -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="logo.png" alt="NASA Logo" class="footer-logo">
+      <span class="footer-title">NASA Biology Hub</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="future.html">Future Direction</a>
+      <a href="visuals.html">Visualizations</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const chatbotBtn = document.getElementById('chatbot-btn');
+  const chatbotBox = document.getElementById('chatbot-box');
+  const chatbotClose = document.getElementById('chatbot-close');
+
+  //Chatbot display
+  chatbotBtn.addEventListener('click', () => {
+    chatbotBox.style.display = chatbotBox.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  chatbotClose.addEventListener('click', () => {
+    chatbotBox.style.display = 'none';
+  });
+</script>
+</body>
+</html>

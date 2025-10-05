@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nasa Biology hub</title>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+</head>
+<body>
+    <div id="header">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="visuals.html">Visualizations</a>
+      <a href="future.html">Future research</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div class="content">
+    <h1>NASA task book & current research focus</h1>
+    <h3>Click on the planets to view category summary</h3>
+</div>
+  <div id="cy"></div>
+
+  <!-- Popup modal for the bubbles-->
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+      <span id="close">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-summary"></p>
+    </div>
+  </div>
+  <div class="content">
+  <h2>What we used to make this mindmap?</h2>
+  <p>We looked into Nasa's 2025 awareness list in Nasa's Task Book website.
+    We summarized all the research papers mentioned on the awareness list from May 2025
+    to now. We then used machine learning models to categorize the research papers
+    into 6 categories and used LLM models to summarize each category. Users can 
+    click on the planets to view a summary of that category. We hope this map can
+    help you stay up to date with Nasa's most recent research focuses. Additionally, this may
+    provide insights to the areas that lack attention, which could be great path to dive into in the future.
+  </p>
+  <p>All the resources we used on this page is from this link: <a style="color: blue" href="https://taskbook.nasaprs.com/tbp/spaceline.cfm?fy=2025">NASA task book</a></p>
+</div>
+<!-- Footer / Bottom bar -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="logo.png" alt="NASA Logo" class="footer-logo">
+      <span class="footer-title">NASA Biology Hub</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="future.html">Future Direction</a>
+      <a href="visuals.html">Visualizations</a>
+    </div>
+  </div>
+</footer>
+  <script src="mindmap.js"></script>
+</body>
+</html>

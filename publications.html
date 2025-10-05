@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nasa Biology hub</title>
+ </head>
+ <body>
+<!--Linking all the tabs of the website-->
+   <div id="header">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="visuals.html">Visualizations</a>
+      <a href="future.html">Future research</a>
+      <a href="resources.html">Resources</a>
+    </div>
+
+<!--Building a searchh bar-->
+    <input 
+      type="text" 
+      id="searchBar" 
+      placeholder="Search by paper title..."
+    >
+
+    <!-- Filters by category for the search bar -->
+    <div class="filters">
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Skeletal & Musculoskeletal Biology">Skeletal & Musculoskeletal Biology</option>
+    <option value="Spaceflight Microbiome Dynamics">Spaceflight Microbiome Dynamics</option>
+    <option value="Plant Growth & Signaling">Plant Growth & Signaling</option>
+    <option value="Space Radiation Biology">Space Radiation Biology</option>
+    <option value="Space Station Genomics">Space Station Genomics</option>
+    <option value="Neurobiology in Spaceflight">Neurobiology in Spaceflight</option>
+    <option value="Cellular Stress Responses">Cellular Stress Responses</option>
+    <option value="C.elegans Model Systems">C.elegans Model Systems</option>
+    <option value="Microgravity & Stem Cells">Microgravity & Stem Cells</option>
+    <option value="Space Omics & Exploration">Space Omics & Exploration</option>
+  </select>
+
+<!--filter by date-->
+      <select id="dateFilter">
+        <option value="">Filter Date</option>
+        <option value="2020">2021-now</option>
+        <option value="2015">2015-2020</option>
+        <option value="2010">2010-2014</option>
+      </select>
+    </div>
+
+    <!-- Results -->
+    <div id="results"></div>
+
+     <div class="container">
+    <h1>Research Papers</h1>
+
+    <!-- where the research paper detail will be filled -->
+    <div id="paperGrid" class="grid"></div>
+  </div>
+
+    <div id="modal" class="modal">
+<!--big button display research papers-->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalSummary"></p>
+    <p id="modalDetails"></p>
+  </div>
+</div>
+  </div>
+<!-- Footer / Bottom bar -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="logo.png" alt="NASA Logo" class="footer-logo">
+      <span class="footer-title">NASA Biology Hub</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="future.html">Future Direction</a>
+      <a href="visuals.html">Visualizations</a>
+    </div>
+  </div>
+</footer>
+<!--Connect to the javascript file-->
+<script src="papers.js"></script>
+  <script src="script.js"></script>
+
+ </body>
+ </html>
+ 
