@@ -3,8 +3,7 @@ Space Biology Engine
 
 **Summary:**
 
-Our project is a web application that displays the 608 NASA bioscience publications in a summary form to allow potential users to comprehend them more easily, and enables users to explore the impacts, findings, and next steps through the search bar.
-We also displayed interactive visualizations showing the amount of research in different areas and existing gaps between the studied areas. Currently, although there have been numerous scientific breakthroughs through in-space experiments, potential users find it difficult to find information about their specific interests and comprehend the results. With our solution, the publications are presented much more organized, and specifically with the AI chatbot that we created, the users can explore the publications faster and more efficiently.
+Our project is a web application that displays the 608 NASA bioscience publications in a summary form to allow potential users to comprehend them more easily, and enables users to explore the impacts, findings, and next steps through the search bar. We also implemented an AI chatbot and displayed interactive visualizations showing the amount of research in different areas and existing gaps between the studied areas. Currently, although there have been numerous scientific breakthroughs through in-space experiments, potential users find it difficult to find information about their specific interests and comprehend the results. With our solution, the publications are presented much more organized and easy to navigate.
 
 There are **6 pages** on the website:
 
